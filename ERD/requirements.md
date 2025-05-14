@@ -28,7 +28,7 @@ Each entity is a "table" in our database, holding specific information.
 
 ## 🌐 2. Relationships
 
-![ER Diagram](/assets/images/airbnb-er-diagram.png)  
+![ER Diagram](assets/images/airbnb-er-diagram.png)  
 
 1. **User ↔ Property**  
    - **1 host** (User) can list **many properties**.  
