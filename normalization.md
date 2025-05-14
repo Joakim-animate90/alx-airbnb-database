@@ -66,7 +66,7 @@ Here are the main entities in our system:
 
 ## 🖼️ ER Diagram
 
-![ER Diagram](./assets/images/airbnb-er-diagram.png)
+![ER Diagram](ERD/assets/images/airbnb-er-diagram.png)
 
 ---
 
