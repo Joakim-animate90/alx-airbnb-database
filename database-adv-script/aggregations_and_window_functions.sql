@@ -27,3 +27,20 @@ FROM (
 ) AS property_booking_counts
 ORDER BY
     property_rank;
+
+-- 3. Rank properties based on the total number of bookings they have received using RANK()
+SELECT
+    property_id,
+    total_bookings,
+    RANK() OVER (ORDER BY total_bookings DESC) AS property_rank
+FROM (
+    SELECT
+        property_id,
+        COUNT(*) AS total_bookings
+    FROM
+        Booking
+    GROUP BY
+        property_id
+) AS property_booking_counts
+ORDER BY
+    property_rank;
